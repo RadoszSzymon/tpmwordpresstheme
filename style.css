@@ -413,10 +413,6 @@ body{
 .home .navbar{
     display: none;
     }
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
 a:hover{
     text-decoration: none;
     color: #DEDEDE;
@@ -483,50 +479,7 @@ a:hover{
 
 .posty h3{
     text-align: center;
-    color:#ffffff;
-}
-
-.post1,.post2,.post3,.post4{
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    height:70vh;
-}
-
-.post1:hover,.post2:hover,.post3:hover,.post4:hover{
-    opacity: 0.9;
-}
-
-.post1{
-    background: url("/b2w/wp-content/themes/thepositivemess/assets/img/1.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.post2{
-    background: url("/b2w/wp-content/themes/thepositivemess/assets/img/2.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.post3{
-    background: url("/b2w/wp-content/themes/thepositivemess/assets/img/3.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.post4{
-    background: url("/b2w/wp-content/themes/thepositivemess/assets/img/4.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    padding:30px;
 }
 
 /*kontakt */

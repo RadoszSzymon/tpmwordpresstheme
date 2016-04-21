@@ -44,20 +44,20 @@ get_header(); ?>
 <div class="jumbotron posty">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 post1">
-                <h3>Tytuł posta</h3>
-            </div>
-            <div class="col-md-6 post2">
-                <h3>Tytuł posta</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 post3">
-                <h3>Tytuł posta</h3>
-            </div>
-            <div class="col-md-6 post4">
-                <h3>Tytuł posta</h3>
-            </div>
+               <h3>Ostatnie posty</h3>
+                <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
+                <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+                
+                <div class="col-md-4">
+                    <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                    <?php the_excerpt(__('(more…)')); ?>
+                </div>
+                
+                <?php
+                endwhile;
+                wp_reset_postdata();
+                ?>
+                
         </div>
     </div>
 </div>
