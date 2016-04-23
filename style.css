@@ -246,20 +246,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	margin: 0 0 1.5em;
 }
 
-.entry-title a{
+.entry-title{
     font-weight: 700;
+    font-size: 50px;
 }
+
+.entry-title a{
+    color:#464747;
+    text-decoration: none;
+}
+
+.entry-title a:hover{
+    color: #585959;
+    text-decoration: none;
+}
+
+.post-details{
+    padding-bottom: 20px;
+    font-size:20px;
+}
+
+.post-image img{
+    padding:20px 0;
+}
+
 .post-excerpt p {
     padding:20px 0;
-    border-bottom: 1px solid black;
 }
 
-.post-body{
-    padding-top: 0;
+.post-body p{
+    padding: 20px 0;
+    font-size: 17px;
 }
-
-
-
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -277,6 +295,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .bypostauthor {
 	display: block;
+}
+
+.photo{
+    border-radius: 60%;
+    width:50px;
+    height: 50px;
+    margin-right:10px;
+}
+
+.comment-content p{
+    font-size:17px;
 }
 
 /*--------------------------------------------------------------
@@ -426,6 +455,35 @@ a:hover{
     align-items: center; /* align vertical */
 }
 
+.navbar-brand span{
+    font-size: 500;
+    color: #4879AB;
+}
+
+.navbar-toggle{
+    border: none;
+}
+
+.home_page_menu_links{
+    color:#fff;
+    text-decoration: none;
+}
+
+.lista-button{
+    border-radius: 20px;
+    border: 2px solid #B1B2B3;
+    width: 200px;
+}
+
+.lista-button:hover{
+    background-color: #fff;
+    border-color: #4879AB;
+}
+
+.home_page_menu_links:after{
+    text-decoration: none;
+}
+
 .banner{
     background: url('/b2w/wp-content/themes/thepositivemess/assets/img/stop.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -450,6 +508,7 @@ a:hover{
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
     text-align: center;
+    border-bottom: 1px solid #B1B2B3;
 }
 
 .lista h2{
@@ -463,23 +522,22 @@ a:hover{
     padding:20px 0;
 }
 
-.lista-button{
-    width:130px;
-}
-
 /* posty */
 .posty{
     padding:0;
 }
 
-.posty .container{
-    margin: 0;
-    width: 100%;
+
+
+.posty h2{
+    text-align: center;
+    padding:30px 0 30px 0;
 }
 
-.posty h3{
-    text-align: center;
-    padding:30px;
+
+
+.home_page_post_title{
+    font-size: 35px;
 }
 
 /*kontakt */
@@ -514,6 +572,10 @@ a:hover{
     border-bottom: 1px solid black;
 }
 
+#content{
+    padding: 0 70px;
+}
+
 .menu-blog{
     text-align: center;
     display: flex;
@@ -525,12 +587,14 @@ a:hover{
     color: black;
 }
 
-.blog a{
-    color:black;
+
+
+.category_span a{
+    color: #4879AB; 
 }
 
-.blog a:hover{
-    color:gray;
+.category_span a:hover{
+    color: #5793CF;
 }
 
 .post-image img{
@@ -539,9 +603,23 @@ a:hover{
     height:70%;
 }
 
-
 #content h3{
     padding-top:30px;
+}
+
+.moretag{
+    margin-top: 30px;
+}
+
+.read_more{
+    margin-top: 25px;
+    border-radius: 20px;
+    border: 2px solid #B1B2B3;
+}
+
+.read_more:hover{
+    background-color: #fff;
+    border-color: #4879AB;
 }
 
 .sidebar{
@@ -566,20 +644,7 @@ ul{
     padding:0;
 }
 
-/*    =====   POST  =====   */
-.post-body{
-    padding:0 0 30px 0;
-    font-size:20px;
-}
-
-.post-body{
-    border-bottom: 1px solid black;
-}
-
-.post-body h2{
-    padding:10px;
-    font-size:40px;
-}
+/*    =====   KOMENTARZE  =====   */
 
 .comments-wrap h3{
     margin:0;
@@ -631,3 +696,10 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     padding:4px;
 }
 
+/* mobile changes */
+@media only screen and (max-device-width: 530px) {
+    .menu .menu-item{
+        width: 100%;
+        display: block;
+    } 
+}

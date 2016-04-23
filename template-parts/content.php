@@ -21,10 +21,8 @@
 		if ( 'post' === get_post_type() ) : ?>
 		    <div class="post-details">
                 <time><?php the_date(); ?></time>
-                <span>&middot;</span>
-                <?php the_category(', '); ?>
-                <span>&middot;</span>
-                <?php the_tags(); ?>
+                <span>/</span>
+                <span class="category_span"><?php the_category(', '); ?></span>
             </div>
 		<?php
 		endif; ?>

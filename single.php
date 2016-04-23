@@ -16,7 +16,7 @@ get_header(); ?>
                 <?php
                 while ( have_posts() ) : the_post();
 
-                    get_template_part( 'template-parts/content', get_post_format() );
+                    get_template_part( 'template-parts/content-page', get_post_format() );
 
                     
 
@@ -30,7 +30,7 @@ get_header(); ?>
             
             </main>
             
-            <aside class="col-md-4">
+            <aside class="col-md-4 sidebar">
                 <?php get_sidebar(); ?>
             </aside>
         </div>

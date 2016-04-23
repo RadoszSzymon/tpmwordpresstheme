@@ -154,6 +154,12 @@ require get_template_directory() . '/inc/jetpack.php';
 /*read more function */
 function new_excerpt_more($more){
     global $post;
-    return '... <a class="moretag" href="'. get_permalink($post->ID) . '">Czytaj dalej &raquo;</a>';
+    return '... <a class="moretag" href="'. get_permalink($post->ID) . '"><button type="button" class="btn btn-default read_more">Czytaj dalej &raquo;</button></a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+/*short length for excerpt */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
