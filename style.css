@@ -204,11 +204,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
+    border-bottom: 1px solid #DEDEDE;
 }
 
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
+}
+
+.search-submit{
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 2px solid #B1B2B3;
+    background-color: #fff;
+    width:80px;
+}
+
+.search-submit:hover{
+    background-color: #fff;
+    border-color: #4879AB;
 }
 
 /*--------------------------------------------------------------
@@ -522,6 +536,10 @@ a:hover{
     padding:20px 0;
 }
 
+.fa-circle-o,.fa-circle{
+    padding-right: 12px;
+}
+
 /* posty */
 .posty{
     padding:0;
@@ -535,9 +553,13 @@ a:hover{
 }
 
 
-
 .home_page_post_title{
     font-size: 35px;
+    color: #4879AB; 
+}
+
+.home_page_post_title:hover{
+    color: #5793CF;
 }
 
 /*kontakt */
@@ -573,7 +595,7 @@ a:hover{
 }
 
 #content{
-    padding: 0 70px;
+    padding: 15px 70px 0 70px;
 }
 
 .menu-blog{
@@ -586,8 +608,6 @@ a:hover{
 .menu-blog a{
     color: black;
 }
-
-
 
 .category_span a{
     color: #4879AB; 
@@ -645,24 +665,53 @@ ul{
 }
 
 /*    =====   KOMENTARZE  =====   */
-
-.comments-wrap h3{
-    margin:0;
-    padding-bottom: 20px;
-}
-
 .comments-wrap ol{
     list-style-type: none;
+    padding-top: 15px;
 }
 
 .comments-wrap small{
     padding-left: 10px;
 }
 
-.comments-wrap p{
-    padding: 20px;
+.reply{
+    padding-bottom: 35px;
 }
 
+.comment-reply-title{
+    padding-bottom: 35px;
+}
+
+#submit{
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid #B1B2B3;
+    width: 200px;
+}
+
+#submit:hover{
+    background-color: #fff;
+    border-color: #4879AB;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    width: 50%;
+}
+
+.comment-notes{
+    display: none;
+}
+
+.form-group label{
+    font-size: 17px;
+    padding-bottom: 3px;
+}
+
+.form-submit{
+    padding: 0;
+}
 #leave-comment h3{
     margin-top:30px;
     border-top: 1px solid black;
@@ -677,15 +726,13 @@ label{
     padding-bottom: 40px;
 }
 
-textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
-    border-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
-    outline: 0 none;
-}
-
 /*  ==========   Lista ====== */
 .lista-celów{
     text-align: center;
+}
+
+#post-16 a{
+    display: none;
 }
 
 .kategoria h2{
@@ -697,9 +744,57 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 }
 
 /* mobile changes */
-@media only screen and (max-device-width: 530px) {
-    .menu .menu-item{
-        width: 100%;
-        display: block;
+@media only screen and (max-device-width: 450px) {
+    #content{
+        padding:10px 10px 20px 10px;
     } 
+    .navbar{
+        padding:10px;
+    }
+    .post-body{
+        padding: 0 10px;
+    }
+
+    .menu-item{
+        display: none;
+    }
+    .site-main, #secondary{
+        padding:0 10px;
+    }
+    .sidebar{
+        padding-top: 0;
+    }
 }
+
+@media only screen and (max-device-width: 200px) {
+    #content{
+        padding:10px 10px 20px 10px;
+    } 
+    .navbar{
+        padding:0;
+    }
+    .navbar-brand{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .post-body{
+        padding: 0 10px;
+    }
+
+    .menu-item,.menu-brand{
+        display: none;
+    }
+    .site-main, #secondary{
+        padding:0 10px;
+    }
+    .sidebar{
+        padding: 0;
+    }
+    .banner-text h1{
+        font-size: 17px;
+    }
+    .lista-button{
+        width:100px;
+    }
+}
+

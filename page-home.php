@@ -11,9 +11,9 @@ get_header(); ?>
 <div class="jumbotron banner">
     <div class="container">
        <div class="row menu">
-           <div class="col-md-2 col-sm-2 col-xs-12 menu-item"><h4><a class="home_page_menu_links" href="">The Positive Mess</a></h4></div>
-           <div class="col-md-2 col-sm-2 col-xs-12 menu-item"><h4><a href="?page_id=8" class="home_page_menu_links">BLOG</a></h4></div>
-           <div class="col-md-2 col-sm-2 col-xs-12 menu-item"><h4><a href="?page_id=16" class="home_page_menu_links">LISTA CELÓW</a></h4></div>
+           <div class="col-md-2 col-sm-2 col-xs-12 menu-brand"><h4><a class="home_page_menu_links" href="">The Positive Mess</a></h4></div>
+           <div class="col-md-2 col-sm-2 col-xs-12 menu-link"><h4><a href="?page_id=8" class="home_page_menu_links">BLOG</a></h4></div>
+           <div class="col-md-2 col-sm-2 col-xs-12 menu-link"><h4><a href="?page_id=16" class="home_page_menu_links">LISTA CELÓW</a></h4></div>
            <div class="col-md-2 col-sm-2 col-xs-12 menu-item"></div>
            <div class="col-md-1 col-sm-1 col-xs-12 menu-item"><a href="#" class="home_page_menu_links"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
            <div class="col-md-1 col-sm-1 col-xs-12 menu-item"><a href="#" class="home_page_menu_links"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
