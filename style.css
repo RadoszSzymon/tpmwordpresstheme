@@ -743,6 +743,11 @@ label{
     padding:4px;
 }
 
+/* search results */
+.site-main,.widget-area{
+    padding: 0 30px;
+}
+
 /* mobile changes */
 @media only screen and (max-device-width: 450px) {
     #content{
