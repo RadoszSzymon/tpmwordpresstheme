@@ -1,1 +1,7 @@
-My personal wordpress theme create to fulfill one on my aims on my bucket list. You can check my blog and bucket list on thepositivemess.pl.
+# Worpress theme example
+
+Basic wordpress sceleton
+
+## Preview
+
+![Screenshot](desktop.png)
